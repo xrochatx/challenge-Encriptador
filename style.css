@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  #input-section {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  textarea {
+    width: 95%;
+    height: 115px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 19px;
+  }
+  
+  #options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  #output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #ccc;
+    position: relative;
+  }
+  
+  #output-text {
+    width: 165%;
+    height: 541px;
+    padding: 10px;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    border-radius: 19px;
+  }
+  
+  
+  #copy-btn {
+    position: absolute;
+    bottom: 20px;
+    right: -91px;
+    padding: 8px 75px;
+  }
+  
+/* Estilos para botones */
+.button {
+    margin-top: 59%;
+    padding: 8px 36px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 19px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-blue {
+    background-color: #0f5996;
+    color: #fff;
+  }
+  
+  .button-blue:hover {
+    background-color: #0f5996;
+  }
+  
+  .button-border-blue {
+    border: 2px solid #0f5996;
+    background-color: transparent;
+    color: #000;
+  }
+  
+  .button-border-blue:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .button-gray {
+    background-color: #ccc;
+    color: #fff;
+  }
+  
+  .button-gray:hover {
+    background-color: #999;
+  }
+  
+  @media screen and (min-width: 600px) {
+    #container {
+      flex-direction: row;
+    }
+  
+    #input-section {
+      margin-right: 10px;
+      flex-grow: 1;
+    }
+  
+    #output-section {
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 2px solid #ccc;
+      height: auto;
+      min-height: 100px;
+    }
+    .warning-text {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+  }
+  
